@@ -1,0 +1,201 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Sidebar */
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#343a40;
+    position:fixed;
+    left:0;
+    top:0;
+    color:white;
+}
+
+.logo{
+    padding:20px;
+    font-size:24px;
+    text-align:center;
+    border-bottom:1px solid #555;
+}
+
+.menu{
+    list-style:none;
+}
+
+.menu li{
+    border-bottom:1px solid #444;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:15px;
+}
+
+.menu a:hover{
+    background:#495057;
+}
+
+/* Main Content */
+.main{
+    margin-left:250px;
+}
+
+/* Navbar */
+.navbar{
+    height:60px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+.nav-icons i{
+    margin-left:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* Dashboard Cards */
+.cards{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    color:white;
+    padding:20px;
+    border-radius:8px;
+}
+
+.blue{background:#0d6efd;}
+.green{background:#198754;}
+.orange{background:#ffc107;color:black;}
+.red{background:#dc3545;}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+/* Content */
+.content{
+    padding:20px;
+}
+
+.chart{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    height:350px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+.chart h3{
+    margin-bottom:20px;
+}
+
+.fake-chart{
+    width:100%;
+    height:250px;
+    background:linear-gradient(
+    to top,
+    #0d6efd 0%,
+    #0d6efd 20%,
+    transparent 20%,
+    transparent 100%);
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="logo">AdminLTE</div>
+
+    <ul class="menu">
+        <li><a href="#"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li><a href="#"><i class="bi bi-people"></i> Users</a></li>
+        <li><a href="#"><i class="bi bi-file-earmark"></i> Reports</a></li>
+        <li><a href="#"><i class="bi bi-envelope"></i> Messages</a></li>
+        <li><a href="#"><i class="bi bi-gear"></i> Settings</a></li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="navbar">
+        <h3>Dashboard</h3>
+
+        <div class="nav-icons">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-bell"></i>
+            <i class="bi bi-person-circle"></i>
+        </div>
+    </div>
+
+    <div class="cards">
+
+        <div class="card blue">
+            <h2>150</h2>
+            <p>New Orders</p>
+        </div>
+
+        <div class="card green">
+            <h2>53%</h2>
+            <p>Bounce Rate</p>
+        </div>
+
+        <div class="card orange">
+            <h2>44</h2>
+            <p>User Registrations</p>
+        </div>
+
+        <div class="card red">
+            <h2>65</h2>
+            <p>Visitors</p>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="chart">
+            <h3>Sales Report</h3>
+            <div class="fake-chart"></div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```

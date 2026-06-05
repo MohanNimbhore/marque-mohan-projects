@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 80px 1fr 60px;
+        grid-template-areas: "top top top"
+        "leftside main rightside"
+        "bottom bottom bottom";
+        gap: 12px;
+        height: 100vh;
+
+    }
+    .top         { grid-area: top; background-color: blue; }
+    .leftside    { grid-area: leftside; background-color: blueviolet;}
+    .main        { grid-area: main; background-color: darkblue; }
+    .rightside   { grid-area: rightside; background-color: blueviolet;}
+    .bottom      { grid-area: bottom; background-color: black;}
+    
+</style>
+<body>
+    <div class="container">
+        <div class="top"></div>
+        <div class="leftside"></div>
+        <div class="main"></div>
+        <div class="rightside"></div>
+        <div class="bottom"></div>
+        <div></div>
+    </div>
+
+    
+</body>
+</html>
